@@ -1,6 +1,6 @@
 function main() {
-  //Erstelle einen Report mit verschiedenen Informationen wie z.B. Kampagne, Anzeigengruppe oder Domain fuer einen Zeitraum.
-  //Statt YESTERDAY ist z.B. auch TODAY, LAST_7_DAYS, LAST_14_DAYS und auch LAST_30_DAYS moeglich:
+  //Creates a report with differen Information like Campaign, Adgroup, Domain,... for a specific timeframe
+  //Instead of YESTERDAY you can also use TODAY, LAST_7_DAYS, LAST_14_DAYS or LAST_30_DAYS
   var report = AdWordsApp.report("SELECT Domain, CampaignName, AdGroupName, Impressions, Clicks, Conversions, ViewThroughConversions, CrossDeviceConversions " +
                                  "FROM AUTOMATIC_PLACEMENTS_PERFORMANCE_REPORT " +
                                  "DURING LAST_7_DAYS");
